@@ -1,0 +1,74 @@
+import mongoose, { Schema } from "mongoose";
+
+const fileSchema = new Schema({
+  path: {
+    type: String,
+    required: true,
+  },
+  name: {
+    type: String,
+    required: true,
+  },
+  // ✅ Cloudinary fields
+  publicId: {
+    type: String,
+    default: null,
+  },
+  resourceType: {
+    type: String,
+    enum: ['image', 'video', 'raw'],
+    default: 'raw',
+  },
+  type: {
+    type: String,
+    required: true,
+  },
+  size: {
+    type: Number,
+    required: true,
+  },
+  downloadedContent: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+
+  // ✅ Optional Password Protection
+  isPasswordProtected: {
+    type: Boolean,
+    default: false,
+  },
+  password: {
+    type: String, // store hashed password using bcrypt
+    default: null,
+  },
+
+  // ✅ Optional Expiry
+  hasExpiry: {
+    type: Boolean,
+    default: false,
+  },
+  expiresAt: {
+    type: Date,
+    default: null,
+  },
+
+  // ✅ Status (active/inactive/expired)
+  status: {
+    type: String,
+    enum: ['active', 'inactive', 'expired'],
+    default: 'active',
+  },
+  shortUrl: {
+    type: String,
+    default: null,
+  },
+  // ✅ User ID
+  createdBy: {
+    type: String,
+    required: true,
+  },
+
+}, { timestamps: true });
+
+export const GuestFile = mongoose.model("GuestFile", fileSchema);
