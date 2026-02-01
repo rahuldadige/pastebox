@@ -22,7 +22,7 @@ const Home = () => {
           <p className="text-lg mb-6 text-gray-600">
             Drag, upload, and share your files instantly. No hassle.
           </p>
-          <Link to="/dashbaord">
+          <Link to="/dashboard">
             <button className="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 text-white rounded-full font-medium shadow">
               Get Started Now
             </button>
