@@ -47,6 +47,7 @@ export { uploadLimiter };
 // CORS configuration for production
 const allowedOrigins = [
   process.env.CLIENT_URL,
+  'https://pastebox-ochre.vercel.app',
   'http://localhost:5173',
   'http://localhost:3000'
 ].filter(Boolean);
