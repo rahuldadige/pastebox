@@ -4,11 +4,11 @@ function Footer() {
   return (
     <footer className="w-full border-t border-gray-300 shadow-inner bg-[var(--bg-color)] text-[var(--text-color)] py-6 px-4 flex flex-col md:flex-row items-center justify-between">
       <p className="text-center text-sm font-medium">
-        Crafted with ❤️ by <span className="font-semibold">Rahul Dadige</span>
+        Crafted with ❤️ by <span className="font-semibold">Rahul, preetham</span>
       </p>
 
-      <div className="flex items-center gap-4 mt-4 md:mt-0">
-        {/* LinkedIn */}
+      /* {/* /* {/* <div className="flex items-center gap-4 mt-4 md:mt-0">
+        {/* LinkedIn }
         <a
           href="https://www.linkedin.com/in/rahul-dadige-9b2874297/"
           target="_blank"
@@ -22,7 +22,7 @@ function Footer() {
           />
         </a>
 
-        {/* GitHub */}
+        {/* GitHub }
         <a
           href="https://github.com/rahuldadige"
           target="_blank"
@@ -36,7 +36,7 @@ function Footer() {
           />
         </a>
 
-        {/* Instagram */}
+        {/* Instagram }
         <a
           href="https://instagram.com/rahul_dadige"
           target="_blank"
@@ -50,9 +50,9 @@ function Footer() {
           />
         </a>
 
-        {/* Email */}
+        {/* Email }
         <a
-          href="mailto:rahuldadige@gmail.com"
+          href="mailto:rahuldadige2@gmail.com"
           className="hover:scale-110 transition-transform"
         >
           <img
@@ -61,7 +61,7 @@ function Footer() {
             className="w-6 h-6 grayscale hover:grayscale-0 transition duration-300"
           />
         </a>
-      </div>
+      </div> */}
     </footer>
   );
 }
